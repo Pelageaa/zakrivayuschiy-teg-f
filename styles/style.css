@@ -372,7 +372,7 @@
   margin-block-end: 30px;
 }
 
-.dialog-id[open] {
+.dialog[open] {
   inline-size: clamp(21.313rem, 20.965rem + 1.497vw, 22.313rem);
   border: 2px solid var(--accent-color);
   padding: 32px;

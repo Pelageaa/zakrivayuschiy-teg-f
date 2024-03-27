@@ -134,7 +134,7 @@
 .section-title {
   color: var(--section-title-color);
   font-size: 18px;
-  font-variation-settings: 'wght' var(--font-weight-section);
+  font-variation-settings: "wght" var(--font-weight-section);
   text-align: left;
   padding-inline-start: 10px;
   padding-block: 5px 5px;
@@ -164,7 +164,7 @@
   margin: 20px 25px 25px 25px;
   inline-size: 646px;
   font-size: 18px;
-  font-variation-settings: 'wght' var(--font-weight);
+  font-variation-settings: "wght" var(--font-weight);
   line-height: 21px;
   gap: 27px;
 }
@@ -323,8 +323,6 @@
   block-size: 100%;
   position: relative;
   z-index: 1;
-  color: var(--save-color);
-  mix-blend-mode: difference;
 }
 
 .button {
@@ -372,7 +370,7 @@
   margin-block-end: 30px;
 }
 
-.dialog[open] {
+.dialog-id[open] {
   inline-size: clamp(21.313rem, 20.965rem + 1.497vw, 22.313rem);
   border: 2px solid var(--accent-color);
   padding: 32px;

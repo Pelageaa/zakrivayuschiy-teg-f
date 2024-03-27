@@ -14,15 +14,16 @@
     ),
     linear-gradient(#e7e7e7 0.01%, #1a1a1a);
   --font-weight: 400;
-  --text-color: #000000;
+  --font-weight-section: 700;
   --accent-color: #000000;
   --section-title-color: #000000;
   --description-color: #000000;
+  --img-label-color: #ffffff;
   --box-shadow: 2px 2px 0px 2px #000000;
   --outline: 2px solid #000000;
   --label-contour: #fff;
   --button-color: #fff;
-  --save-color: #fff;
+  --save-color: #000;
   --main-color: #000;
   --sparks-color: #ff0000;
 }

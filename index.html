@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark light" />
     <title>Закрывающий тег</title>
     <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./styles/variables.css" />
@@ -520,7 +521,7 @@
         <button
           type="button"
           class="save button"
-          onclick="window['dialog-id'].showModal()"
+          onclick="window['dialog'].showModal()"
         >
           <svg viewBox="0 0 21 21" class="save-icon">
             <use href="./svg/floppy.svg#floppy"></use>
@@ -537,7 +538,7 @@
           <button
             class="window-close button"
             type="button"
-            onclick="window['dialog-id'].close()"
+            onclick="window['dialog'].close()"
           >
             <span class="button-close">ок</span>
           </button>

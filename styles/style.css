@@ -104,6 +104,7 @@
   content: "▶";
   position: absolute;
   left: -16px;
+  top: -1px;
   animation: cursor 0.5s infinite ease-in-out alternate;
   pointer-events: none;
 }
@@ -123,8 +124,9 @@
   margin-top: 3px;
   opacity: 0.6;
   background-color: var(--accent-color);
-  transition: transform 0.3s ease;
+  transition:  0.3s ease;
   transform: scaleX(0);
+  transform-origin: left;
 }
 
 .theme-menu__button:focus-visible::after {
@@ -198,10 +200,11 @@
   z-index: 1;
 }
 
-@supports ((-webkit-text-stroke: 1px var(--label-contour))) {
+@supports ((text-stroke: 1px var(--label-contour)) or (-webkit-text-stroke: 1px var(--label-contour))) {
   .img-label {
     text-shadow: none;
     -webkit-text-stroke: 1px var(--label-contour);
+    text-stroke: 1px var(--label-contour);
   }
 }
 
@@ -219,15 +222,20 @@
   mix-blend-mode: difference;
   z-index: 1;
   position: relative;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 12.6px;
 }
 
 .card__like-button {
-  width: 130px;
-  height: 38px;
+  width: 128px;
+  height: 36px;
   padding: 0px;
   font-size: 14px;
   font-weight: 400;
   line-height: 12.6px;
+  transition: color 0.3s ease;
+  cursor: pointer;
 }
 
 .card__icon-button {
@@ -237,6 +245,11 @@
   height: 38px;
   outline: 2px solid;
   color: transparent;
+  cursor: pointer;
+}
+
+.like-icon {
+  height: 100%;
 }
 
 .card__icon-button:focus {
@@ -245,7 +258,6 @@
 
 .card__icon-button:focus-visible {
   color: var(--accent-color);
-  transition: color 0.3s ease;
 }
 
 .ordinary-decor {
@@ -322,6 +334,15 @@
   inline-size: 100%;
   block-size: 100%;
   position: relative;
+  mix-blend-mode: difference;
+  color: var(--button-color);
+  z-index: 1;
+}
+
+.dialog-floppy{
+  position: relative;
+  mix-blend-mode: difference;
+  color: var(--button-color);
   z-index: 1;
 }
 
@@ -331,7 +352,7 @@
   outline: 2px solid var(--accent-color);
   font-family: var(--font-family), sans-serif;
   position: relative;
-  transition: box-shadow 0.5s;
+  transition: box-shadow 0.3s;
   cursor: pointer;
   overflow: hidden;
 }
@@ -371,15 +392,15 @@
 }
 
 .dialog-id[open] {
-  inline-size: clamp(21.313rem, 20.965rem + 1.497vw, 22.313rem);
+  display: grid;
   border: 2px solid var(--accent-color);
-  padding: 32px;
-  background-color: var(--bg-color);
+  padding: 30px;
+  background-color: var(--bg-color); 
 }
 
 .dialog-id::backdrop {
   opacity: 0.75;
-  background-color: var(--bg-color, #000);
+  background-color: var(--bg-color);
   z-index: 1;
 }
 
@@ -389,12 +410,22 @@
   cursor: pointer;
   align-items: center;
   text-transform: uppercase;
+  font-family: var(--font-family);
   height: 38px;
   width: 293px;
   color: var(--button-color);
   mix-blend-mode: difference;
   z-index: 1;
   position: relative;
+}
+
+.window-close{
+  line-height: 12.6px;
+  font-size: 14px;
+}
+.images{
+  object-fit: cover;
+  object-position: center;
 }
 
 @media (width < 376px) {
@@ -439,7 +470,15 @@
     max-width: 28px;
     max-height: 28px;
   }
+
+  .dialog-floppy {
+    width: 39px;
+  }
   .button-close {
     width: 257px;
+  }
+
+  .discet-text{
+    inline-size: 198px;
   }
 }

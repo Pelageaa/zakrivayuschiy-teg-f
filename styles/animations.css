@@ -69,7 +69,7 @@
   transition: fill 0.3s 0.06s linear;
 }
 
-.like-icon.is-liked .heart-liked {
+.like-icon.is-liked .heart {
   animation: heart 0.3s 0.1s 1 ease-in alternate;
   transform-origin: center;
 }

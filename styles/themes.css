@@ -55,6 +55,7 @@
   --font-weight-section: 700;
   --accent-color: #000000;
   --section-title-color: #000000;
+  --description-color: #000000;
   --button-color: #fff;
   --img-label-color: #ffffff;
   --box-shadow: 2px 2px 0px 2px #000000;
@@ -83,6 +84,7 @@
     --accent-color: #000000;
     --section-title-color: #000000;
     --button-color: #fff;
+    --description-color: #000000;
     --heart-body-color: #000;
     --img-label-color: #ffffff;
     --box-shadow: 2px 2px 0px 2px #000000;

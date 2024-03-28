@@ -124,7 +124,7 @@
   margin-top: 3px;
   opacity: 0.6;
   background-color: var(--accent-color);
-  transition:  0.3s ease;
+  transition: 0.3s ease;
   transform: scaleX(0);
   transform-origin: left;
 }
@@ -200,7 +200,10 @@
   z-index: 1;
 }
 
-@supports ((text-stroke: 1px var(--label-contour)) or (-webkit-text-stroke: 1px var(--label-contour))) {
+@supports (
+  (text-stroke: 1px var(--label-contour)) or
+    (-webkit-text-stroke: 1px var(--label-contour))
+) {
   .img-label {
     text-shadow: none;
     -webkit-text-stroke: 1px var(--label-contour);
@@ -339,7 +342,7 @@
   z-index: 1;
 }
 
-.dialog-floppy{
+.dialog-floppy {
   position: relative;
   mix-blend-mode: difference;
   color: var(--button-color);
@@ -395,7 +398,7 @@
   display: grid;
   border: 2px solid var(--accent-color);
   padding: 30px;
-  background-color: var(--bg-color); 
+  background-color: var(--bg-color);
 }
 
 .dialog-id::backdrop {
@@ -419,11 +422,11 @@
   position: relative;
 }
 
-.window-close{
+.window-close {
   line-height: 12.6px;
   font-size: 14px;
 }
-.images{
+.images {
   object-fit: cover;
   object-position: center;
 }
@@ -478,7 +481,7 @@
     width: 257px;
   }
 
-  .discet-text{
+  .discet-text {
     inline-size: 198px;
   }
 }
